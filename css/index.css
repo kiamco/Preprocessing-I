@@ -171,7 +171,7 @@ header .right ul {
 }
 section.cover {
   margin: 20px;
-  width: 70%;
+  width: 90%;
 }
 .main-content {
   display: flex;
@@ -203,4 +203,18 @@ section.cover {
   font-weight: 100;
   line-height: 1.2;
   font-size: 0.9rem;
+}
+.body-right .category.skill ul {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  justify-content: center;
+}
+.body-right .category.skill ul li {
+  padding: 10px;
+  border: 1px solid rgba(37, 146, 146, 0.774);
+  border-radius: 0.5rem;
+  background: rgba(37, 146, 146, 0.774);
+  color: white;
+  margin: 10px;
 }
