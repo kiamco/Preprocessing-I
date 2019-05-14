@@ -219,14 +219,14 @@ section.cover {
   font-size: 0.9rem;
 }
 .category .sub-category {
-  font-size: 0.7rem;
+  font-size: 0.8rem;
   color: rgba(37, 146, 146, 0.774);
   margin-top: 5px;
   margin-left: 5px;
 }
 .category .sub-category-items {
   margin-top: 0px;
-  font-size: 0.7rem;
+  font-size: 0.8rem;
   font-weight: 100;
 }
 .body-right .category.skill ul {
@@ -243,4 +243,21 @@ section.cover {
   color: white;
   margin: 5px;
   font-size: 0.8rem;
+}
+.body-right .project {
+  margin-top: 5px;
+  cursor: pointer;
+}
+.body-right .project:hover {
+  color: rgba(37, 146, 146, 0.774);
+  font-weight: bold;
+  text-decoration: underline;
+}
+.body-right .indent {
+  margin: 10px 0px auto 40px;
+  font-size: 0.8rem;
+}
+.body-right .indent span {
+  color: rgba(37, 146, 146, 0.774);
+  font-weight: bolder;
 }
