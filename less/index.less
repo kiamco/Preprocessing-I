@@ -147,15 +147,21 @@ body {
 
 // start style
 
+//  variables
+@main-color:rgba(37, 146, 146, 0.774);
+//mixin
 .flex() {
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: space-between;
 }
 
+
 .container {
 	margin: 20px auto;
 	width: 60%;
+	font-family: 'Raleway',sans-serif;
+
 }
 
 header {
@@ -180,7 +186,7 @@ header {
 
 			span {
 				font-size: 1.2rem;
-				color: rgba(59, 187, 187, 0.774)
+				color: @main-color;
 			}
 		}
 
@@ -192,6 +198,48 @@ header {
 		ul {
 			text-align: right;
 			line-height: 1.8em;
+		}
+	}
+}
+
+section.cover {
+	margin: 20px;
+	width: 70%;
+}
+
+//divde main cntent in to two columns	
+.main-content{
+	.flex();
+	width: 100%;
+	.body-left{
+		border-top:0px solid @main-color;
+		width: 45%;
+	}
+
+	.body-right{
+		border-top:0px solid @main-color;
+		width: 45%;
+	}
+}
+
+// first column of body
+.category {
+	border-top:2px solid @main-color;
+	h2{
+		font-weight: bolder;
+		padding-top:5px;
+		font-size:1.5rem;
+		
+	}
+
+	ul{
+		margin:1rem;
+		font-weight: bolder;
+
+		li span{
+			font-weight:100;
+			line-height: 1.2;
+			font-size: 0.9rem;
 		}
 	}
 }

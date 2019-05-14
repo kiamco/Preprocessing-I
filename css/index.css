@@ -137,6 +137,7 @@ body {
 .container {
   margin: 20px auto;
   width: 60%;
+  font-family: 'Raleway', sans-serif;
 }
 header {
   display: flex;
@@ -162,9 +163,44 @@ header .left h1 {
 }
 header .left h1 span {
   font-size: 1.2rem;
-  color: rgba(59, 187, 187, 0.774);
+  color: rgba(37, 146, 146, 0.774);
 }
 header .right ul {
   text-align: right;
   line-height: 1.8em;
+}
+section.cover {
+  margin: 20px;
+  width: 70%;
+}
+.main-content {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  width: 100%;
+}
+.main-content .body-left {
+  border-top: 0px solid rgba(37, 146, 146, 0.774);
+  width: 45%;
+}
+.main-content .body-right {
+  border-top: 0px solid rgba(37, 146, 146, 0.774);
+  width: 45%;
+}
+.category {
+  border-top: 2px solid rgba(37, 146, 146, 0.774);
+}
+.category h2 {
+  font-weight: bolder;
+  padding-top: 5px;
+  font-size: 1.5rem;
+}
+.category ul {
+  margin: 1rem;
+  font-weight: bolder;
+}
+.category ul li span {
+  font-weight: 100;
+  line-height: 1.2;
+  font-size: 0.9rem;
 }
