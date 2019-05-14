@@ -135,37 +135,51 @@ body {
   height: 100%;
 }
 .container {
-  margin: 20px auto;
+  margin: 0px auto;
   width: 60%;
   font-family: 'Raleway', sans-serif;
 }
 header {
+  background: rgba(37, 146, 146, 0.774);
+  padding: 20px;
+}
+header nav {
+  text-align: right;
+}
+header nav a {
+  text-decoration: none;
+  color: white;
+  margin: auto 10px;
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+.header2 {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
   margin-top: 50px;
 }
-header img {
+.header2 img {
   width: 10rem;
   height: 10rem;
   border-radius: 50rem;
 }
-header .left {
+.header2 .left {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
   font-size: 2rem;
 }
-header .left h1 {
+.header2 .left h1 {
   line-height: 0.9;
   margin-left: 1.5em;
   margin-top: 15px;
 }
-header .left h1 span {
+.header2 .left h1 span {
   font-size: 1.2rem;
   color: rgba(37, 146, 146, 0.774);
 }
-header .right ul {
+.header2 .right ul {
   text-align: right;
   line-height: 1.8em;
 }

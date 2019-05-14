@@ -158,13 +158,29 @@ body {
 
 
 .container {
-	margin: 20px auto;
+	margin: 0px auto;
 	width: 60%;
 	font-family: 'Raleway',sans-serif;
 
 }
 
-header {
+header{
+	background: @main-color;
+	padding:20px;
+	nav{
+		text-align: right;
+
+		a{
+			text-decoration:none;
+			color: white;
+			margin: auto 10px;
+			font-size:1.3rem;
+			cursor: pointer;
+		}		
+	}
+}
+
+.header2 {
 	.flex();
 	margin-top: 50px;
 
