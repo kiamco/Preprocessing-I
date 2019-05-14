@@ -136,7 +136,7 @@ body {
 }
 .container {
   margin: 0px auto;
-  width: 60%;
+  width: 71%;
   font-family: 'Raleway', sans-serif;
 }
 header {
@@ -218,6 +218,17 @@ section.cover {
   line-height: 1.2;
   font-size: 0.9rem;
 }
+.category .sub-category {
+  font-size: 0.7rem;
+  color: rgba(37, 146, 146, 0.774);
+  margin-top: 5px;
+  margin-left: 5px;
+}
+.category .sub-category-items {
+  margin-top: 0px;
+  font-size: 0.7rem;
+  font-weight: 100;
+}
 .body-right .category.skill ul {
   display: flex;
   flex-flow: row wrap;
@@ -230,5 +241,6 @@ section.cover {
   border-radius: 0.5rem;
   background: rgba(37, 146, 146, 0.774);
   color: white;
-  margin: 10px;
+  margin: 5px;
+  font-size: 0.8rem;
 }
