@@ -166,8 +166,5 @@ header .left h1 span {
 }
 header .right ul {
   text-align: right;
-  line-height: 2em;
-}
-header .right ul li {
-  content-bottom: 5px;
+  line-height: 1.8em;
 }
