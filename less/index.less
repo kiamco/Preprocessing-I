@@ -157,10 +157,15 @@ body {
 	justify-content: space-between;
 }
 
+.flex-column() {
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: space-between;
+}
 
 .container {
 	margin: 0px auto;
-	width: 71%;
+	width: 70%;
 	font-family: 'Raleway', sans-serif;
 
 }
@@ -243,9 +248,10 @@ section.cover {
 	}
 }
 
-// first column of body
+// left column of body
 .category {
 	border-top: 2px solid @main-color;
+	margin-top: 1rem;
 
 	h2 {
 		font-weight: bolder;
@@ -277,6 +283,13 @@ section.cover {
 		margin-top: 0px;
 		font-size: 0.8rem;
 		font-weight: 100;
+		line-height: 1.5;
+	}
+
+	.fa {
+		padding-right: 10px;
+		color: @main-color;
+		font-size: 24px;
 	}
 }
 
@@ -292,34 +305,119 @@ section.cover {
 			border-radius: .5rem;
 			background: @main-color;
 			color: white;
-			margin:5px;
+			margin: 5px;
 			font-size: 0.8rem;
 		}
 	}
 
-	// .category{
-
-	// }
-
-	.project{
-		margin-top:5px;
-		cursor: pointer;
+	.category {
+		margin-top: 1rem;
 	}
 
-	.project:hover{
+	.project {
+		margin-top: 5px;
+		cursor: pointer;
+		font-weight: bold;
+	}
+
+	.project:hover {
 		color: @main-color;
 		font-weight: bold;
-		text-decoration:underline;
+		text-decoration: underline;
 	}
 
-	.indent{
+	.indent {
+
 		margin: 10px 0px auto 40px;
 		font-size: 0.8rem;
-		
-		span{
-			color:@main-color;
+
+		span {
+			color: @main-color;
 			font-weight: bolder;
 		}
 	}
 
+	// styling for langauge section
+	.language {
+		.flex();
+
+		li {
+			margin: 20px;
+
+			span {
+				font-style: italic;
+				padding: 5px;
+				background: @main-color;
+				border: 1px solid @main-color;
+				color: white;
+				border-radius: 0.5rem;
+			}
+		}
+	}
+
+	.interests {
+		.flex();
+
+		li {
+			width: 45%;
+			padding: 5px;
+		}
+	}
+
+	.fa {
+		margin-right: 10px;
+		font-size: 24px;
+		color: @main-color;
+	}
+}
+
+
+@media(max-width:500px)
+{
+	.container{
+		width:100%;
+	}
+	header{
+		width: 100%;
+		nav{
+			.flex-column();
+			align-content: center;
+			
+			a{
+				padding:5px 10px;
+			}
+		}
+	}
+
+	.header2{
+		.flex-column();
+		
+		.left{
+			.flex-column();
+			img {
+				margin-left:6rem;
+			}
+
+		}
+
+		.right{
+			ul{
+			text-align: center;
+			}
+		}
+
+
+	}
+	.main-content{
+		.flex-column();
+		width:100%;
+
+		.body-left{
+			width: 100%;
+		}
+
+		.body-right{
+			width: 100%;
+		}
+	}
 }

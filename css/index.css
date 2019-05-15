@@ -136,7 +136,7 @@ body {
 }
 .container {
   margin: 0px auto;
-  width: 71%;
+  width: 70%;
   font-family: 'Raleway', sans-serif;
 }
 header {
@@ -203,6 +203,7 @@ section.cover {
 }
 .category {
   border-top: 2px solid rgba(37, 146, 146, 0.774);
+  margin-top: 1rem;
 }
 .category h2 {
   font-weight: bolder;
@@ -228,6 +229,12 @@ section.cover {
   margin-top: 0px;
   font-size: 0.8rem;
   font-weight: 100;
+  line-height: 1.5;
+}
+.category .fa {
+  padding-right: 10px;
+  color: rgba(37, 146, 146, 0.774);
+  font-size: 24px;
 }
 .body-right .category.skill ul {
   display: flex;
@@ -244,9 +251,13 @@ section.cover {
   margin: 5px;
   font-size: 0.8rem;
 }
+.body-right .category {
+  margin-top: 1rem;
+}
 .body-right .project {
   margin-top: 5px;
   cursor: pointer;
+  font-weight: bold;
 }
 .body-right .project:hover {
   color: rgba(37, 146, 146, 0.774);
@@ -260,4 +271,79 @@ section.cover {
 .body-right .indent span {
   color: rgba(37, 146, 146, 0.774);
   font-weight: bolder;
+}
+.body-right .language {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+.body-right .language li {
+  margin: 20px;
+}
+.body-right .language li span {
+  font-style: italic;
+  padding: 5px;
+  background: rgba(37, 146, 146, 0.774);
+  border: 1px solid rgba(37, 146, 146, 0.774);
+  color: white;
+  border-radius: 0.5rem;
+}
+.body-right .interests {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+.body-right .interests li {
+  width: 45%;
+  padding: 5px;
+}
+.body-right .fa {
+  margin-right: 10px;
+  font-size: 24px;
+  color: rgba(37, 146, 146, 0.774);
+}
+@media (max-width: 500px) {
+  .container {
+    width: 100%;
+  }
+  header {
+    width: 100%;
+  }
+  header nav {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    align-content: center;
+  }
+  header nav a {
+    padding: 5px 10px;
+  }
+  .header2 {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+  }
+  .header2 .left {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+  }
+  .header2 .left img {
+    margin-left: 6rem;
+  }
+  .header2 .right ul {
+    text-align: center;
+  }
+  .main-content {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .main-content .body-left {
+    width: 100%;
+  }
+  .main-content .body-right {
+    width: 100%;
+  }
 }
