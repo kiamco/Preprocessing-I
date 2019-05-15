@@ -306,30 +306,41 @@ section.cover {
   .container {
     width: 100%;
   }
-  header {
+  .nav-container {
     width: 100%;
+    margin: 0px auto;
   }
-  header nav {
+  .nav-container header {
+    width: 100%;
+    background: white;
+  }
+  .nav-container header nav {
     display: flex;
     flex-flow: column wrap;
     justify-content: space-between;
-    align-content: center;
+    align-items: center;
   }
-  header nav a {
-    padding: 5px 10px;
+  .nav-container header nav a {
+    padding: 0px 100% 10px;
+    border: 1px solid rgba(37, 146, 146, 0.774);
+    text-align: center;
   }
   .header2 {
     display: flex;
     flex-flow: column wrap;
     justify-content: space-between;
+    align-items: center;
   }
   .header2 .left {
     display: flex;
     flex-flow: column wrap;
     justify-content: space-between;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
   }
-  .header2 .left img {
-    margin-left: 6rem;
+  .header2 .left h1 {
+    margin-left: 0;
   }
   .header2 .right ul {
     text-align: center;
