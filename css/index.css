@@ -304,26 +304,25 @@ section.cover {
 }
 @media (max-width: 500px) {
   .container {
-    width: 100%;
+    width: 95%;
+    margin: auto auto;
   }
   .nav-container {
     width: 100%;
-    margin: 0px auto;
+    margin: auto auto;
   }
-  .nav-container header {
-    width: 100%;
-    background: white;
-  }
-  .nav-container header nav {
+  .nav-container nav {
     display: flex;
     flex-flow: column wrap;
     justify-content: space-between;
     align-items: center;
+    justify-content: space-around;
   }
-  .nav-container header nav a {
-    padding: 0px 100% 10px;
-    border: 1px solid rgba(37, 146, 146, 0.774);
-    text-align: center;
+  .nav-container nav a {
+    margin: 5px;
+    padding: 5px;
+    border: 1px solid white;
+    border-radius: 0.7rem;
   }
   .header2 {
     display: flex;
