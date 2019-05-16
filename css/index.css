@@ -310,6 +310,7 @@ section.cover {
   .nav-container {
     width: 100%;
     margin: auto auto;
+    font-family: 'Raleway', sans-serif;
   }
   .nav-container nav {
     display: flex;
