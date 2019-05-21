@@ -1,19 +1,152 @@
 <!doctype html>
 
 <html lang="en">
+
 <head>
-  <meta charset="utf-8">
+    <meta charset="utf-8">
 
-  <title>My Resume</title>
-
-  <link rel="stylesheet" href="css/index.css">
-
-  <!--[if lt IE 9]>
+    <title>My Resume</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
   <![endif]-->
 </head>
 
 <body>
-  <h1>My Resume</h1>
+    <div class="nav-container">
+        <header>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="#">About</a>
+                <a href="#">Portfolio</a>
+                <a href="#">Contact</a>
+            </nav>
+        </header>
+    </div>
+    <div class="container">
+        <section class="header2">
+            <div class="left">
+                <img src="images/sample3.jpg" alt="interviewee's photo" />
+                <h1>Kim Kiamco<br>
+                    <span>Student and Hacking Enthusiast</span>
+                </h1>
+            </div>
+
+            <div class="right">
+                <ul>
+                    <li>kiamcoo@gmail.com <i class="large material-icons">contact_mail</i></li>
+                    <li>909-767-5806<i class="large material-icons">local_phone</i></li>
+                    <li>Fremont, Unted States<i class="large material-icons">location_on</i></li>
+                    </li>
+                    <li>linkedin.com/in/kiamcoo@gmail.com<i class="large material-icons">person</i></li>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="cover">
+            <p> "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia runt mollit anim id est laborum."f</p>
+        </section>
+
+        <section class="main-content">
+            <div class="body-left">
+                <div class="category">
+                    <h2>EDUCATION</h2>
+                    <ul>
+                        <li><i class="fa fa-dot-circle-o"></i>Computer Science<span><br>Foothill College, Los Altos (06/2016
+                            -Present)</span></li>
+                        <li class=sub-category>Ongoing/Finished Courses</li>
+                        <ul class="sub-category-items">
+                            <li>- Discreet Math</li>
+                            <li>- Java OOP</li>
+                            <li>- C++ OOP</li>
+                            <li>- Full Calculus Series</li>
+                            <!-- <li></li>
+              <li></li> -->
+                        </ul>
+                    </ul>
+                </div>
+                <div class="category">
+                    <h2>WORK EXPERIENCE</h2>
+                    <ul>
+                        <li><i class="fa fa-dot-circle-o"></i>Menlo Security (03/2017 -present) <span><br>Operations Analyst
+                            Intern,
+                            Palo Alto</span></li>
+                        <li class="sub-category">Tasks</li>
+                        <ul class="sub-category-items">
+                            <li>- set up monitoring tools in splunk</li>
+                            <li>- create actionable alerts </li>
+                            <li>- filed bugs in JIRA</li>
+                            <li>- Assists engineers with anything when needed</li>
+                            <li>- write scripts when needed</li>
+                            <li>- help with integrating new monitoring tools</li>
+                            <li>- create automated tools for testing</li>
+                        </ul>
+                    </ul>
+                </div>
+            </div>
+            <div class="body-right">
+                <div class="category skill">
+                    <h2>Skills</h2>
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>Python</li>
+                        <li>Javascript</li>
+                        <li>Pen testing</li>
+                        <li>Bash script</li>
+                        <li>Splunk</li>
+                        <li>Kali Linux</li>
+                        <li>Automation</li>
+                        <li>JIRA</li>
+                        <li>Analytics</li>
+                        <li>Burpsuit</li>
+                    </ul>
+                </div>
+
+                <!-- personal projects section -->
+                <div class="category">
+                    <h2>Personal Projects</h2>
+                    <h4 class="project"><i class="fa fa-dot-circle-o"></i>Automated Subdomain Takeover (03/2019-Present)
+                    </h4>
+                    <p class="indent"> <span>-</span> working on an automated subdomain takeover that would run on cron job
+                    </p>
+                    <p class="indent"> <span>-</span> The main goal for this project is to find vulnereable subdomains from multiple program scopes in bug bouty websites anc check if are vulnereable </p>
+                    <h4 class="project"><i class="fa fa-dot-circle-o"></i> Bug Bounties (03/2019 - Present)</h4>
+                    <p class="indent"> <span>-</span> I have found a couple of website that were vulnerable to cross site scripting in some HackerOne ' programs
+                    </p>
+                    <h4 class="project"><i class="fa fa-dot-circle-o"></i> Text Encryption (02/2019 - 02/2019)</h4>
+                    <p class="indent"> <span>-</span> a script that encrypts text files using symmetric and asymetric algorithms using OpenSsl</p>
+                </div>
+
+                <div class="category">
+                    <h2>Languages</h2>
+                    <ul class="language">
+                        <li>English <span>Fully Profecient</span> </li>
+                        <li>Tagalog <span>Fully Profecient</span> </li>
+                    </ul>
+                </div>
+
+                <div class="category">
+                    <h2>Interests</h2>
+                    <ul class=interests>
+                        <li><i class="fa fa-bug"></i>Bug Bounty</li>
+                        <li><i class="fa fa-balance-scale"></i>Math</li>
+                        <li><i class="fa fa-cogs"></i>Automation</li>
+                        <li><i class="fa fa-key"></i>Cyber Security</li>
+                        <li><i class="fa fa-cutlery"></i>Food</li>
+                        <li><i class="fa fa-gamepad"></i>Gaming</li>
+
+                    </ul>
+                </div>
+            </div>
+
+        </section>
+    </div>
 </body>
+
 </html>

@@ -1,1 +1,360 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+.container {
+  margin: 0px auto;
+  width: 70%;
+  font-family: 'Raleway', sans-serif;
+}
+header {
+  background: rgba(37, 146, 146, 0.774);
+  padding: 20px;
+}
+header nav {
+  text-align: right;
+}
+header nav a {
+  text-decoration: none;
+  color: white;
+  margin: auto 10px;
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+.header2 {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+.header2 img {
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50rem;
+}
+.header2 .left {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  font-size: 2rem;
+}
+.header2 .left h1 {
+  line-height: 0.9;
+  margin-left: 1.5em;
+  margin-top: 15px;
+}
+.header2 .left h1 span {
+  font-size: 1.2rem;
+  color: rgba(37, 146, 146, 0.774);
+}
+.header2 .right ul {
+  text-align: right;
+  line-height: 1.8em;
+}
+section.cover {
+  margin: 20px;
+  width: 90%;
+}
+.main-content {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  width: 100%;
+}
+.main-content .body-left {
+  border-top: 0px solid rgba(37, 146, 146, 0.774);
+  width: 45%;
+}
+.main-content .body-right {
+  border-top: 0px solid rgba(37, 146, 146, 0.774);
+  width: 45%;
+}
+.category {
+  border-top: 2px solid rgba(37, 146, 146, 0.774);
+  margin-top: 1rem;
+}
+.category h2 {
+  font-weight: bolder;
+  padding-top: 5px;
+  font-size: 1.5rem;
+}
+.category ul {
+  margin: 1rem;
+  font-weight: bolder;
+}
+.category ul li span {
+  font-weight: 100;
+  line-height: 1.2;
+  font-size: 0.9rem;
+}
+.category .sub-category {
+  font-size: 0.8rem;
+  color: rgba(37, 146, 146, 0.774);
+  margin-top: 5px;
+  margin-left: 5px;
+}
+.category .sub-category-items {
+  margin-top: 0px;
+  font-size: 0.8rem;
+  font-weight: 100;
+  line-height: 1.5;
+}
+.category .fa {
+  padding-right: 10px;
+  color: rgba(37, 146, 146, 0.774);
+  font-size: 24px;
+}
+.body-right .category.skill ul {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  justify-content: center;
+}
+.body-right .category.skill ul li {
+  padding: 10px;
+  border: 1px solid rgba(37, 146, 146, 0.774);
+  border-radius: 0.5rem;
+  background: rgba(37, 146, 146, 0.774);
+  color: white;
+  margin: 5px;
+  font-size: 0.8rem;
+}
+.body-right .category {
+  margin-top: 1rem;
+}
+.body-right .project {
+  margin-top: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+.body-right .project:hover {
+  color: rgba(37, 146, 146, 0.774);
+  font-weight: bold;
+  text-decoration: underline;
+}
+.body-right .indent {
+  margin: 10px 0px auto 40px;
+  font-size: 0.8rem;
+}
+.body-right .indent span {
+  color: rgba(37, 146, 146, 0.774);
+  font-weight: bolder;
+}
+.body-right .language {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+.body-right .language li {
+  margin: 20px;
+}
+.body-right .language li span {
+  font-style: italic;
+  padding: 5px;
+  background: rgba(37, 146, 146, 0.774);
+  border: 1px solid rgba(37, 146, 146, 0.774);
+  color: white;
+  border-radius: 0.5rem;
+}
+.body-right .interests {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+.body-right .interests li {
+  width: 45%;
+  padding: 5px;
+}
+.body-right .fa {
+  margin-right: 10px;
+  font-size: 24px;
+  color: rgba(37, 146, 146, 0.774);
+}
+@media (max-width: 500px) {
+  .container {
+    width: 95%;
+    margin: auto auto;
+  }
+  .nav-container {
+    width: 100%;
+    margin: auto auto;
+    font-family: 'Raleway', sans-serif;
+  }
+  .nav-container nav {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .nav-container nav a {
+    margin: 5px;
+    padding: 5px;
+    border: 1px solid white;
+    border-radius: 0.7rem;
+  }
+  .header2 {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .header2 .left {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .header2 .left h1 {
+    margin-left: 0;
+  }
+  .header2 .right ul {
+    text-align: center;
+  }
+  .main-content {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .main-content .body-left {
+    width: 100%;
+  }
+  .main-content .body-right {
+    width: 100%;
+  }
+}
